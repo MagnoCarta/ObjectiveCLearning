@@ -15,6 +15,6 @@ let package = Package(
         .target(
             name: "MathSupport",
             dependencies: [],
-            path: "Sources/MathSupport"),
+  	    publicHeadersPath: ""),
     ]
 )
