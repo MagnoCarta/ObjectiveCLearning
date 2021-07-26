@@ -1,4 +1,13 @@
 //
+//  File.m
+//  
+//
+//  Created by Lucas Fernandes on 21/07/21.
+//
+
+#import <Foundation/Foundation.h>
+
+//
 //  main.m
 //  TestObjectiveC
 //
@@ -7,6 +16,12 @@
 
 #import <Foundation/Foundation.h>
 double const myPI = 3.14159265358979323846;
+
+//typedef enum {
+//    circle,
+//    square,
+//    rectangle,
+//} PolygonType;
 
 @interface PolygonClass : NSObject {
     double area;
@@ -94,3 +109,5 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+
+
