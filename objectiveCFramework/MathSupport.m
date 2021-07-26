@@ -76,12 +76,3 @@ double const myPI = 3.14159265358979323846;
 }
 
 @end
-
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        PolygonClass *myPolygon = [[PolygonClass alloc] base:4 triangleHeight:6];
-        NSLog(@"%lf", myPolygon.area);
-    }
-    return 0;
-}
