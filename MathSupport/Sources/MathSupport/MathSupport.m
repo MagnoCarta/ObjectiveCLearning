@@ -8,13 +8,6 @@
 #import <Foundation/Foundation.h>
 double const myPI = 3.14159265358979323846;
 
-//typedef enum {
-//    circle,
-//    square,
-//    rectangle,
-//    triangle
-//} PolygonType;
-
 @interface PolygonClass : NSObject {
     double area;
     double volume;
