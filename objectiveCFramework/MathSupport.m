@@ -13,6 +13,17 @@ double const myPI = 3.14159265358979323846;
 
 @synthesize area;
 
++ (instancetype)sharedInstance
+{
+    static PolygonClass *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[PolygonClass alloc] init];
+        // Do any other initialisation stuff here
+    });
+    return sharedInstance;
+}
+
 -(double)rectangleArea:(double) newLargura comprimento:(double)newComprimento;
 {
     area = newLargura*newComprimento;
