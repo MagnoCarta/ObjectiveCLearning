@@ -24,6 +24,7 @@ FOUNDATION_EXPORT const unsigned char objectiveCFrameworkVersionString[];
 @interface PolygonClass : NSObject {
     double area;
     double volume;
+    PolygonClass *shared;
 }
 
 @property(nonatomic, readwrite) double area;
