@@ -28,22 +28,22 @@ FOUNDATION_EXPORT const unsigned char objectiveCFrameworkVersionString[];
 
 @property(nonatomic, readwrite) double area;
 
--(id)largura:(double) newLargura comprimento:(double)newComprimento;
+-(double)rectangleArea:(double) newLargura comprimento:(double)newComprimento;
 
--(id)lado:(double) lado;
+-(double)squareArea:(double) lado;
 
--(id)diagonalMaior:(double) newDiagonalMaior diagonalMenor:(double) newDiagonarMenor;
+-(double)lojangArea:(double) newDiagonalMaior diagonalMenor:(double) newDiagonarMenor;
 
--(id)base:(double) newBase triangleHeight:(double) newHeight;
+-(double)triangleArea:(double) newBase triangleHeight:(double) newHeight;
 
--(id)baseMaior:(double) newBaseMaior baseMenor:(double) newBaseMenor height:(double) newHeight;
+-(double)trapeziumArea:(double) newBaseMaior baseMenor:(double) newBaseMenor height:(double) newHeight;
 
--(id)perimeter:(double) newPerimeter apotema:(double) newApotema;
+-(double)regularPolygonArea:(double) newPerimeter apotema:(double) newApotema;
 
--(id)radius:(double) radius;
+-(double)circleArea:(double) radius;
 
--(id)radius:(double) radius geratriz:(double) newGeratriz;
+-(double)coneArea:(double) radius geratriz:(double) newGeratriz;
 
--(id)sphereRadius:(double) radius;
+-(double)sphereArea:(double) radius;
 
 @end

@@ -9,70 +9,63 @@
 #import <Foundation/Foundation.h>
 double const myPI = 3.14159265358979323846;
 
-//typedef enum {
-//    circle,
-//    square,
-//    rectangle,
-//    triangle
-//} PolygonType;
-
 @implementation PolygonClass
 
 @synthesize area;
 
--(id)largura:(double) newLargura comprimento:(double)newComprimento;
+-(double)rectangleArea:(double) newLargura comprimento:(double)newComprimento;
 {
     area = newLargura*newComprimento;
-    return self;
+    return area;
 }
 
--(id)lado:(double) lado;
+-(double)squareArea:(double) lado;
 {
     area = lado*lado;
-    return self;
+    return area;
 }
 
--(id)diagonalMaior:(double) newDiagonalMaior diagonalMenor:(double) newDiagonarMenor;
+-(double)lojangArea:(double) newDiagonalMaior diagonalMenor:(double) newDiagonarMenor;
 {
     area = newDiagonalMaior * newDiagonarMenor/2;
-    return self;
+    return area;
 }
 
 
--(id)base:(double) newBase triangleHeight:(double) newHeight;
+-(double)triangleArea:(double) newBase triangleHeight:(double) newHeight;
 {
     area = newBase * newHeight/2;
-    return self;
+    return area;
 }
 
--(id)baseMaior:(double) newBaseMaior baseMenor:(double) newBaseMenor height:(double) newHeight;
+-(double)trapeziumArea:(double) newBaseMaior baseMenor:(double) newBaseMenor height:(double) newHeight;
 {
     area = ((newBaseMaior+newBaseMenor)/2) * newHeight;
-    return self;
+    return area;
 }
 
--(id)perimeter:(double) newPerimeter apotema:(double) newApotema;
+-(double)regularPolygonArea:(double) newPerimeter apotema:(double) newApotema;
 {
     area = newPerimeter/2 * newApotema;
-    return self;
+    return area;
 }
 
--(id)radius:(double) radius;
+-(double)circleArea:(double) radius;
 {
     area = radius*radius*myPI;
-    return self;
+    return area;
 }
 
--(id)radius:(double) radius geratriz:(double) newGeratriz;
+-(double)coneArea:(double) radius geratriz:(double) newGeratriz;
 {
     area = radius*newGeratriz*myPI;
-    return self;
+    return area;
 }
 
--(id)sphereRadius:(double) radius;
+-(double)sphereArea:(double) radius;
 {
     area = radius*myPI*4;
-    return self;
+    return area;
 }
 
 @end
