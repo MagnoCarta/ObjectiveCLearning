@@ -28,6 +28,8 @@ FOUNDATION_EXPORT const unsigned char objectiveCFrameworkVersionString[];
 
 @property(nonatomic, readwrite) double area;
 
++(id)sharedManager;
+
 -(double)rectangleArea:(double) newLargura comprimento:(double)newComprimento;
 
 -(double)squareArea:(double) lado;
