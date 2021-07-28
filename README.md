@@ -1,23 +1,30 @@
-# MathSupport
+## Overview
 
-After download the Package by in the dev branch, for begin using , it will only need to import  in the swift file
+MathSupport is an objective-C framework built to simplify the experience of people who need math resources in Swift projects, and a hard time for developers to use reasonable amount of time and lines of code just to achieve really simple effects.
 
+## Installation
+
+### SPM
+
+You just need to copy and paste this repository link in your Xcode
+
+`<addr>` https://github.com/MagnoCarta/ObjectiveCLearning
+
+## How to Use
+
+After downloading the Package, to use it you'll just need to import it in the swift file
 
 import MathSupport
 --
 
-With the import done, now you can use it freely, right now we only have one class with a singleton
-
-the PolygonClass
+With the import done, you can use it freely, at this moment we have just one class with a singleton, the PolygonClass
 
 and with it you can get the Area of some types of polygons 
 
 
-
-
 myPolygon.circleArea(<#T##radius: Double##Double#>) 
 --
-get the Area of a circle , you need to give the radius as parameter
+get the Area of a circle, you need to give the radius as parameter
 
 myPolygon.coneArea(<#T##radius: Double##Double#>, geratriz: <#T##Double#>)
 --
